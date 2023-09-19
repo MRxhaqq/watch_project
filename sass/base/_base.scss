@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include respond(big-desktop) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+
+    @include respond(phone) {
+        font-size: 43.75%;
+    }
+
+    
+}
+
+:root {
+    --color-background: #FFF9F6;
+    --color-navigation: #4B3B36;
+    --color--primary: #FF8A47;
+    --color--primary-light: #f8ae83;
+    --color--secondary: #FFF0E8;
+    --color--tertiary: #fe6f1a63;
+    --color-text: #333333;
+    --color-text-2: #897b72;
+    --shadow-primary: 0 .5rem 5rem var(--color--tertiary);
+    --shadow-secondary: 0rem 3rem 5rem var(--color--secondary);
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.65;
+    box-sizing: border-box;
+    padding: 4rem 4.5rem;
+    color: var(--color-text);
+    background-color: var(--color-background);
+
+    @include respond(tab-land) {
+        padding: 2rem 2.5rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 1 1.5;
+    }
+
+    @include respond(phone) {
+        padding: 0 0;
+    }
+}

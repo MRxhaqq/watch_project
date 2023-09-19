@@ -1,0 +1,14 @@
+{
+  "name": "watch_project",
+  "version": "1.0.0",
+  "description": "Watch application",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Shuaib Abdulhaqq Omieza",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
